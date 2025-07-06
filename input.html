@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <style>
+        body{
+            background-color: #414141;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in html</h1>
+    <form action="url" method="get"accept-charset="UTF-8" autocomplete="off" enctype="application/x-www-form-urlencoded" >
+       
+        <label for="fname">First Name</label><br>
+        <input type="text" placeholder="First name"name="" id="fname" value="hitesh"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" placeholder="Last name"name="" id="lname"><br>
+        <!-- <input type="week" name="" id=""> -->
+        <input type="hidden">
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <!-- <input type="email" name="" id=""> -->
+        <!-- only email allowed in this field -->
+        <select name="editors" id="">
+            <option value="vscode">vscode</option>
+            <option value="boomboom">boomboo</option>
+
+        </select>
+        <input list="editors" name = "editor">
+        <datalist id = "editors">
+            <option value="vscode">vscode</option>
+            <option value="boomboom">boomboom</option>
+        </datalist>
+        <!-- rarely used -> datalist -->
+        <input type="range" name="vol" id="vol"min = "0"max="99">
+        <label for="vol">volume</label><br>
+        <!-- to show the value we use this code -->
+        <label for="rangeInput">Select a value: </label>
+    <input type="range" id="rangeInput" min="0" max="100" value="50" oninput="updateValue(this.value)">
+    <span id="rangeValue">50</span>
+
+    <script>
+        function updateValue(val) {
+            document.getElementById('rangeValue').textContent = val;
+        }
+    </script>
+
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: grey;
+        }
+    </style>
+    <title>images</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/28271655/pexels-photo-28271655/free-photo-of-a-mountain-with-a-black-cloud-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width ="100"alt="no image">
+    <!-- shift plus alt plus down arrow to make duplicate -->
+    <img src="./c:./Users./Lakshay Pahwa./Downloads./republicday.png" width ="100"alt="no image">
+    <picture>
+        <source media="(min-width:160px)" srcset="./republicda.png" />
+        <img src="./republicday.png"width ="160px" alt="">
+    </picture>
+    <!-- thodi si java script hai ye jisse image pe kahin click kro toh to kahin link hojaoge -->
+    <img src="republicday.png" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="779,726,1077,903" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="4,235,977,645" shape="rect">
+</map>
+<script>
+    function one(){
+        alert("you clicked on one")
+    }
+    function two(){
+        alert("you clicked on one==")
+    }
+</script>
+
+</body>
+</html>
